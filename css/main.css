@@ -1,127 +1,94 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
-  font-family: "Outfit", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
-.cont_general {
+.container_base {
   width: 100%;
   height: 100vh;
-  background: #001733;
+  background: #e0e8ff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.cont_general .container {
-  width: 280px;
-  height: 460px;
-  padding: 20px;
-  background: #0c2c44;
-  border-radius: 7px;
+.container_base .container_tarjeta {
+  width: 350px;
+  height: 550px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.cont_general .container .container_image {
+.container_base .container_tarjeta .image_fondo {
   width: 100%;
-  height: 250px;
-  background-image: url(../images/image-equilibrium.jpg);
+  height: 200px;
+  background-image: url(../images/illustration-hero.svg);
   background-size: 100% 100%;
+}
+.container_base .container_tarjeta .title {
+  margin-top: 30px;
+  text-align: center;
+  color: #1f2f56;
+}
+.container_base .container_tarjeta .parrafo {
+  width: 80%;
   margin: auto;
-  border-radius: 7px;
-}
-.cont_general .container .container_image .container_image_superior {
-  width: 100%;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cont_general .container .container_image .container_image_superior .image {
-  width: 50px;
-  height: 50px;
-}
-.cont_general .container .container_image .container_image_superior:hover {
-  border-radius: 7px;
-  background: #2dade086;
-}
-.cont_general .container .container_image .container_image_superior:hover .image {
-  background-image: url(../images/icon-view.svg);
-  background-size: 100% 100%;
-}
-.cont_general .container .vinculo {
-  text-decoration: none;
-}
-.cont_general .container .vinculo .container_title {
-  margin-top: 10px;
-}
-.cont_general .container .vinculo .container_title:hover {
-  color: #95f8ff;
-}
-.cont_general .container .container_text {
-  margin-top: 10px;
-  font-size: 15px;
-  color: #6592b8;
-}
-.cont_general .container .icons {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
-  width: 100%;
-  padding: 5px 0px;
+  text-align: center;
+  color: #7280a7;
+}
+.container_base .container_tarjeta .cont_order {
+  width: 80%;
+  background: #f5f7ff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.cont_general .container .icons .airbnb {
+.container_base .container_tarjeta .cont_order .cont_anual_plan {
+  width: auto;
+  padding: 3px 0px;
   display: flex;
-  align-items: center;
 }
-.cont_general .container .icons .airbnb .desc {
-  color: #95f8ff;
-  margin-left: 5px;
-}
-.cont_general .container .icons .clock {
-  display: flex;
-  align-items: center;
-}
-.cont_general .container .icons .clock .desclock {
-  margin-left: 5px;
-  color: #2277bd;
-}
-.cont_general .container .barra {
-  width: 100%;
-  height: 2px;
-  border: none;
-  background: #95f8ff;
-  margin: auto;
-  opacity: 0.1;
-}
-.cont_general .container .cont_client {
-  margin-top: 10px;
-  width: 100%;
-  display: flex;
-  border-radius: 100%;
-  align-items: center;
-  font-size: 14px;
-  color: #056cc0;
-}
-.cont_general .container .cont_client .image {
-  width: 35px;
-  height: 35px;
-  border: 1px solid white;
-  border-radius: 100%;
-  background-image: url(../images/image-avatar.png);
+.container_base .container_tarjeta .cont_order .cont_anual_plan .figure {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/icon-music.svg);
   background-size: 100% 100%;
-  margin-right: 5px;
 }
-.cont_general .container .cont_client .vinculo {
+.container_base .container_tarjeta .cont_order .cont_anual_plan .figure_text {
+  margin-left: 12px;
+}
+.container_base .container_tarjeta .cont_order .cont_anual_plan .figure_text .figure_text_title {
+  font-size: 16px;
+  color: #1f2f56;
+}
+.container_base .container_tarjeta .cont_order .cont_anual_plan .figure_text .figure_text_p {
+  color: #7280a7;
+}
+.container_base .container_tarjeta .boton {
+  margin-top: 20px;
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 10%;
+  background: #3829e0;
+  color: #e0e8ff;
+  cursor: pointer;
+}
+.container_base .container_tarjeta .cancel {
+  margin-top: 10px;
+  text-align: center;
+}
+.container_base .container_tarjeta .cancel .link2 {
   text-decoration: none;
-}
-.cont_general .container .cont_client .vinculo .text_image {
-  margin-left: 5px;
-}
-.cont_general .container .cont_client .vinculo .text_image:hover {
-  color: #95f8ff;
+  color: #7280a7;
 }
 
 /*# sourceMappingURL=main.css.map */
