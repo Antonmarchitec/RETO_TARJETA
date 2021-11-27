@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+} 
+    
+.cont_general{   
+    width: 100%;
+    height: 100vh;
+    background: #001733;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 280px;
+        height: 460px;
+        padding:20px;
+        background: #0c2c44;
+        //margin: 30px auto;
+        border-radius:7px;
+        .container_image{
+           width: 100%;
+           height: 250px;
+           background-image:url(../images/image-equilibrium.jpg);
+           background-size: 100% 100%; 
+           margin: auto; 
+           border-radius: 7px;
+           .container_image_superior{
+               width: 100%;
+               height: 250px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               .image{
+                    width: 50px;
+                    height: 50px;
+               }
+           }
+           .container_image_superior:hover{
+                border-radius: 7px;
+                background: #2dade086;
+                .image{
+                    background-image: url(../images/icon-view.svg);
+                    background-size:100% 100%; 
+                }
+           }
+        }
+        .vinculo{
+            text-decoration: none;
+            .container_title{
+                margin-top: 10px;
+            }
+            .container_title:hover{
+                color:rgb(149, 248, 255) ;;
+            }
+        }
+        .container_text{
+            margin-top: 10px;
+            font-size: 15px;
+            color:#6592b8;
+        }
+        .icons{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .airbnb{
+               display: flex;
+               align-items: center;
+               .desc{
+                   color:rgb(149, 248, 255) ;
+                   margin-left: 5px;
+               }
+            }
+            .clock{
+               display: flex;
+               align-items: center;
+               .desclock{
+                   margin-left: 5px;
+                   color:#2277bd;
+               }
+            }
+        }
+        .barra{
+            width: 100%;
+            height: 2px;
+            border:none;
+            background: rgb(149, 248, 255);
+            margin: auto;
+            opacity: 0.1;
+        }
+        .cont_client{
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            border-radius: 100%;
+            align-items: center;
+            font-size: 14px;
+            color:#056cc0;
+            .image{
+               width:35px;
+               height: 35px;
+               border:1px solid white ;
+                border-radius: 100%;
+               background-image: url(../images/image-avatar.png);
+               background-size: 100% 100%;
+               margin-right: 5px;
+            }
+            .vinculo{
+                text-decoration: none;
+                .text_image{
+                    margin-left: 5px;
+                 }
+                 .text_image:hover{
+                     color:rgb(149, 248, 255) ;
+                 }
+            }
+          
+        }
+    }
+}
